@@ -58,8 +58,8 @@ body{
 .content h1,
 .informations h1,
 .reviews h1{
-    font-size: 50px;
-    line-height: 64px;
+    font-size: 34px;
+    line-height: 42px;
 }
 .hero p{
     font-size: 18px;
@@ -79,7 +79,17 @@ header nav .menu-button:hover,
 {
     opacity: .9;
 }
-.hero form .icon{
+ 
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: transparent;
+}
+
+.hero form .icon,
+footer form .icon{
     right: 0;
     height: 100%;
     display: flex;
@@ -95,11 +105,29 @@ header nav .menu-button:hover,
 #reviews{
     padding-block: 5rem;
 }
-#informations,
-.information{
-    padding-block: 7.5rem;
+
+.mockup-content{
+    display: flex;
+    flex-wrap: wrap-reverse;
 }
 
+.mockup-content-right img{
+    width: 200%;
+}
+
+
+.information{
+    padding-block: 3rem;
+}
+
+.information img{
+    width: 100%;
+}
+
+.information-content{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
 .card{
     width: 367px;
     box-shadow: 1px 5px 19px 2px rgba(118, 118, 178, 0.24);
@@ -127,19 +155,50 @@ header nav .menu-button:hover,
 }
 
 .swiper {
-    margin-top: 7.5rem;
     width: 100%;
     height: 100%;
-    padding-block: 50px !important;
-
+    padding-block: 5rem !important;
   }
  
+  footer h3{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
  footer{
     background-color: var(--dark-blue);
     padding-top: 6rem ;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
  } 
-/* .nav-item{
-    text-decoration: underline;
+
+ footer p,
+ footer li a{
+    font-size: 14px;
+    line-height: 23px;
+ }
+ footer form input[type="email"]{
+    background-color: rgba(245, 245, 245, 0.24);
+    font-weight: 400 !important;
+}
+footer ::placeholder{
     color: white;
-} */
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item:nth-child(1){
+    order: 2;
+}
+.footer-item:nth-child(2){
+    order: 3;
+}
+.footer-item:nth-child(3){
+    order: 4;
+}
+.footer-item:nth-child(4){
+    order: 1;
+}
+

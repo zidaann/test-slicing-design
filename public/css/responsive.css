@@ -1,0 +1,89 @@
+@media (min-width: 576px) { 
+    .hero h1,
+    .content h1,
+    .informations h1,
+    .reviews h1{
+        font-size: 34px !important;
+        line-height: 42px;
+    }
+    .hero p{
+        font-size: 16px !important;
+        line-height: 24px;
+    }
+    .mockup-content-left{
+        order: 2 !important;
+    }
+    .mockup-content-right{
+        order: 1 !important;
+    }
+    
+ }
+
+@media (min-width: 768px) { 
+
+}
+
+
+@media (min-width: 992px) { 
+
+}
+
+
+@media (min-width: 1200px) {
+    .hero h1,
+    .content h1,
+    .informations h1,
+    .reviews h1{
+        font-size: 50px;
+        line-height: 64px;
+    }
+    nav{
+        background-color: transparent;
+    }
+
+    .hero form button{
+        width: 50%;
+    }
+
+    .mockup-content{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+   .mockup-content-left{
+        order: 1 !important;
+    }
+    .mockup-content-right{
+        order: 2 !important;
+    }
+    .mockup-content-right img{
+        width: 100% !important;
+    }
+
+    .information img{
+        width: 560px;
+    }
+    #informations{
+        padding-block: 7.5rem;
+    }
+    .footer-content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-item:nth-child(1){
+        order: 1 !important;
+    }
+    .footer-item:nth-child(2){
+        order: 2 !important;
+    }
+    .footer-item:nth-child(3){
+        order: 3 !important;
+    }
+    .footer-item:nth-child(4){
+        order: 4 !important;
+    }
+ }
+
+
+@media (min-width: 1400px) { 
+ }

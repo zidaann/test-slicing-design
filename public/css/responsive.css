@@ -15,6 +15,8 @@
     .mockup-content-right{
         order: 1 !important;
     }
+    
+    
  }
 
 @media (min-width: 768px) { 
@@ -56,9 +58,10 @@
         margin-right: -90px;
     }
 
-    /* .card .card-footer img{
-        width: 100px;
-    } */
+    .detail-blog-profile{
+        width: 80%;
+    }
+
     .footer-content{
         width: 100%;
         display: flex;
@@ -84,11 +87,20 @@
 
 
 @media (min-width: 1200px) {
+    .navbar-nav{
+        backdrop-filter: none;
+        box-shadow: none;
+    }
     .hero h1,
     .informations h1,
-    .reviews h1{
+    .reviews h1,
+    .blog h1{
         font-size: 50px;
         line-height: 64px;
+    }
+    .blog p{
+        font-size: 14px;
+        line-height: 23px;
     }
     nav{
         background-color: transparent;
@@ -112,8 +124,12 @@
         width: 100% !important;
     }
 
-    .card{
+    .card
+    {
         width: 367px;
+    }
+    .card-post{
+        width: 350px;
     }
     .information img{
         width: 560px;
@@ -148,8 +164,34 @@
     .footer-item:nth-child(4){
         order: 4 !important;
     }
+    .detail-blog h1{
+        font-size: 50px;
+        line-height: 64px;
+    }
+    .detail-blog-profile{
+        width: 60%;
+    }
+    .detail-blog-content-img img{
+        width: 100% !important;
+        object-fit: cover;
+        object-position: center;
+        margin: 0 auto !important;
+    }
+    .detail-blog-body p{
+        font-size: 18px;
+        line-height: 27px;
+        word-spacing: 5px;
+        padding-inline: 0px;
+    }
+    .detail-blog-profile,
+    .detail-blog-comment{
+        margin-block: 5rem;
+    }
  }
 
 
 @media (min-width: 1400px) { 
+    .card-post{
+        width: 400px;
+    }
  }

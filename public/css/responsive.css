@@ -1,14 +1,36 @@
-@media (min-width: 576px) { 
-    .hero h1,
-    .content h1,
-    .informations h1,
-    .reviews h1{
-        font-size: 34px !important;
-        line-height: 42px;
+@media (max-width: 576px){
+    .card{
+        width: 98%;
     }
+}
+@media (min-width: 576px) { 
     .hero p{
         font-size: 16px !important;
         line-height: 24px;
+    }
+    
+    .mockup-content-left{
+        order: 2 !important;
+    }
+    .mockup-content-right{
+        order: 1 !important;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .hero h1,
+    .informations h1,
+    .reviews h1,
+    .mockup-content h1{
+        font-size: 50px;
+        line-height: 64px;
+    }
+    .hero button{
+        width: 75%;
+    }
+    .mockup-content{
+        display: flex;
+        flex-wrap: wrap;
     }
     .mockup-content-left{
         order: 2 !important;
@@ -16,22 +38,53 @@
     .mockup-content-right{
         order: 1 !important;
     }
-    
- }
 
-@media (min-width: 768px) { 
+    .informations p,
+    .reviews p,
+    .mockup-content p{
+        font-size: 16px;
+        line-height: 24px;
+    }
 
+    .information-left:nth-child(odd){
+        margin-left: -90px;
+    }
+    .information-content .information-left{
+        margin-left: 0px;
+    }
+    .information-content .information-right{
+        margin-right: -90px;
+    }
+
+    /* .card .card-footer img{
+        width: 100px;
+    } */
+    .footer-content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-item:nth-child(1){
+        order: 1 !important;
+    }
+    .footer-item:nth-child(2){
+        order: 2 !important;
+    }
+    .footer-item:nth-child(3){
+        order: 3 !important;
+    }
+    .footer-item:nth-child(4){
+        order: 4 !important;
+    }
 }
 
 
 @media (min-width: 992px) { 
-
 }
 
 
 @media (min-width: 1200px) {
     .hero h1,
-    .content h1,
     .informations h1,
     .reviews h1{
         font-size: 50px;
@@ -59,11 +112,24 @@
         width: 100% !important;
     }
 
+    .card{
+        width: 367px;
+    }
     .information img{
         width: 560px;
     }
     #informations{
         padding-block: 7.5rem;
+    }
+
+    .information-left:nth-child(odd){
+        margin-left: 0px;
+    }
+    .information-content .information-left{
+        margin-left: 0px;
+    }
+    .information-content .information-right{
+        margin-right: 0px;
     }
     .footer-content{
         width: 100%;

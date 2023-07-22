@@ -53,11 +53,13 @@ body{
 .menu-button{
     background-color: rgba(118, 118, 178, .8);
     border-radius: 5px;
+    text-align: center;
 }
 .hero h1,
 .content h1,
 .informations h1,
-.reviews h1{
+.reviews h1,
+.mockup-content h1{
     font-size: 34px;
     line-height: 42px;
 }
@@ -96,6 +98,13 @@ footer form .icon{
     padding: 10px;
     align-items: center;
 }
+
+.hero input{
+    width: 100%;
+}
+.hero button{
+    width: 100%;
+}
 .hero ::placeholder{
     color: var(--desaturated-blue);
 }
@@ -129,7 +138,7 @@ footer form .icon{
     flex-wrap: wrap-reverse;
 }
 .card{
-    width: 367px;
+    width: 260px;
     box-shadow: 1px 5px 19px 2px rgba(118, 118, 178, 0.24);
     -webkit-box-shadow: 1px 5px 19px 2px rgba(118, 118, 178, 0.24);
     -moz-box-shadow: 1px 5px 19px 2px rgba(118, 118, 178, 0.24);
@@ -137,18 +146,22 @@ footer form .icon{
 .profile-review{
     margin-top: 10px;
 }
+.card .card-footer img{
+    width: 70px;
+    border-radius: 50%;
+}
 .card-body p{
     font-size: 18px;
     line-height: 27px ;
     color: rgba(35, 35, 64, 0.9);
     font-weight: 400;
 }
-.card-footer .name-review{
+.card-footer span.name-review{
     font-size: 24px;
     line-height: 30px;
     color: var(--dark-blue);
 }
-.card-footer .position-review{
+.card-footer p.position-review{
     font-size: 14px;
     line-height: 23px;
     color: var(--desaturated-blue)
@@ -159,6 +172,7 @@ footer form .icon{
     height: 100%;
     padding-block: 5rem !important;
   }
+
  
   footer h3{
     font-size: 24px;

@@ -3,15 +3,30 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     // loop: true,
     breakpoints: {
-      640: {
-        slidesPerView: 2,
+      300: {
+        slidesPerView: 1,
+        // spaceBetween: 200,
+      },
+      428: {
+        slidesPerView: 1,
+        spaceBetween: 150,
+      },
+      768:{
+        slidesPerView: 3,
+        spaceBetween: 120,
+        centeredSlides: true,
+      },
+      820:{
+        slidesPerView: 3,
+        spaceBetween: 120,
+        centeredSlides: true,
       },
       1024: {
         slidesPerView: 3,
         centeredSlides: true,
+        spaceBetween: 20,
       },
     },
-    spaceBetween: 20,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
